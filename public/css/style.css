@@ -1,0 +1,114 @@
+body {
+  background: linear-gradient(
+    109.6deg,
+    rgb(245, 239, 249) 30.1%,
+    rgb(207, 211, 236) 100.2%
+  );
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e9e8e8;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 500px;
+}
+
+.todoItems {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 400px;
+}
+
+.todoItems li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.todoItems li:last-child {
+  border-bottom: none;
+}
+
+.papa {
+  color: #424141;
+  margin-bottom: 5px;
+}
+
+.child {
+  margin: 0;
+}
+
+h1 {
+  margin: 0 10px;
+  background: -webkit-linear-gradient(
+    106.2deg,
+    rgb(0, 186, 217) -4.3%,
+    rgb(121, 134, 204) 14.1%,
+    rgb(150, 117, 206) 34.7%,
+    rgb(186, 105, 200) 53%,
+    rgb(240, 71, 112) 74.7%,
+    rgb(239, 162, 92) 95.6%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.completed {
+  color: gray;
+  text-decoration: line-through;
+}
+
+/* Add the following CSS to style the form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+form input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: rgb(186, 105, 200);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+form input[type="submit"]:hover {
+  background-color: rgba(237, 107, 140, 0.717);
+}
+
+.fa-trash {
+  margin-left: 15px;
+  cursor: pointer;
+}
